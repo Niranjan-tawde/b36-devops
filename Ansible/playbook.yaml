@@ -6,12 +6,12 @@
   tasks:
    
   - name: Upgrade all packages
-    yum:
+    apt:
      name: '*'
      state: latest
       
   - name: Install the latest version of nginx
-    yum:
+    apt:
      name: nginx
      state: latest
       
