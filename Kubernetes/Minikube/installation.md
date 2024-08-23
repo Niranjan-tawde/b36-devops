@@ -6,6 +6,13 @@ Instance Size: t2.large with 2 CPUs, 32 GB Storage
 
 ## Step 2 : Install Docker
 ````
+sudo apt install docker.io -y
+sudo usermod -aG docker ubuntu
+newgrp docker
+sudo systemctl restart ubuntu
+````
+or
+````
 sudo apt update
 ````
 Next, install a few prerequisite packages which let apt use packages over HTTPS:
